@@ -17,6 +17,20 @@ module ROM
       adapter :memory
       schema_class Memory::Schema
 
+      # @!method take(amount)
+      #   @param (see Dataset#take)
+      #   @return [Relation]
+      #   @see Dataset#take
+      #
+      # @!method join(*args)
+      #   @param (see Dataset#take)
+      #   @return [Relation]
+      #   @see Dataset#join
+      #
+      # @!method restrict(criteria = nil)
+      #   @param (see Dataset#restrict)
+      #   @return [Relation]
+      #   @see Dataset#restrict
       forward :take, :join, :restrict, :order
 
       # Project a relation with provided attribute names
