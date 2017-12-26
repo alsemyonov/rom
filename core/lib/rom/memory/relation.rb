@@ -31,6 +31,11 @@ module ROM
       #   @param (see Dataset#restrict)
       #   @return [Relation]
       #   @see Dataset#restrict
+      #
+      # @!method order(*fields)
+      #   @param (see Dataset#order)
+      #   @return [Relation]
+      #   @see Dataset#order
       forward :take, :join, :restrict, :order
 
       # Project a relation with provided attribute names
